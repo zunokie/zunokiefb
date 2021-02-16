@@ -1,0 +1,190 @@
+.welcome-section {
+  background-color: #facb0e !important;
+  background-image: repeating-linear-gradient(
+    to right,
+    currentColor,
+    currentColor 1px,
+    transparent 1px,
+    transparent
+  );
+  background-size: 25px 25px;
+  height: 100vh;
+  color: #fde482;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.welcome-section h1 {
+  /* width: 400px; */
+  text-align: center;
+  color: black;
+  font-size: 4em;
+  font-weight: bold;
+}
+.welcome-section p {
+  display: block;
+  margin: 4.5rem;
+  font-weight: bold;
+  color: #000;
+  opacity: 0.5;
+}
+.welcome-section .text-center {
+  transition: all 0.2s;
+}
+.welcome-section .text-center:hover {
+  transform: scale(1.125);
+}
+.welcome-section .text-center a {
+  height: calc(2.8rem + 2.25rem + 2px);
+  padding: 1.5rem calc(1.25rem + 2.5rem);
+  line-height: 1.5;
+  background-color: black;
+  color: white;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.75px;
+}
+.content-section {
+  margin: 2.5rem;
+}
+.content-section .bg-pattern {
+  background-image: radial-gradient(currentColor 1px, transparent 1px);
+  background-size: calc(10 * 1px) calc(10 * 1px);
+  color: #facb0e;
+  margin: 2.5rem;
+}
+.content-section .bg-pattern .txt-container {
+  background-color: #fff;
+  color: #37454e;
+  margin: 6rem 0 6rem 0;
+  padding: 15px 50px 0 15px;
+  padding-bottom: 0;
+  transform: translate(40px, -40px);
+}
+.content-section .bg-pattern .txt-container h3 {
+  line-height: 1.5;
+  margin-bottom: 0;
+  font-weight: bold;
+  text-align: justify;
+  text-shadow: 5px 5px 5px #facb0e;
+  letter-spacing: 150%;
+}
+.content-section .bg-pattern .txt-container h3 small {
+  display: block;
+  margin-top: 2rem;
+  line-height: 2;
+  text-shadow: none;
+}
+.content-section .bg-pattern .txt-container h3 small span {
+  display: block;
+  color: #d1a804;
+}
+.content-section .img-bg {
+  background-image: radial-gradient(currentColor 1px, transparent 1px);
+  background-size: calc(10 * 1px) calc(10 * 1px);
+  margin: 2.5rem;
+  color: #facb0e;
+  position: relative;
+}
+.content-section .img-bg img {
+  width: 100%;
+  transform: translate(-40px, 40px);
+}
+.content-section .img-bg .icon-arow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: rotate(-45deg);
+  text-shadow: 5px 5px 5px #37454e;
+  transition: all 2s;
+  animation: arow 1s linear infinite;
+}
+@keyframes arow {
+  to {
+    right: 50px;
+    top: 50px;
+  }
+}
+.contact-section {
+  background: linear-gradient(135deg, currentColor 25%, transparent 25%) -10px 0,
+    linear-gradient(225deg, currentColor 25%, transparent 25%) -10px 0,
+    linear-gradient(315deg, currentColor 25%, transparent 25%),
+    linear-gradient(45deg, currentColor 25%, transparent 25%);
+  background-size: calc(2 * 10px) calc(2 * 10px);
+  color: #edf0f3;
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.contact-section:after {
+  content: "";
+  display: block;
+  padding-bottom: 200px;
+}
+.contact-section .bg-zig-pattern {
+  background-image: radial-gradient(currentColor 1px, transparent 1px);
+  background-size: calc(10 * 1px) calc(10 * 1px);
+  color: #e7393f;
+  margin: 8rem 5rem 0;
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-section .bg-zig-pattern .left-content {
+  text-align: right;
+  color: #facb0e;
+  text-shadow: -4px -4px 0px #00ce73;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(currentColor 1px, transparent 1px),
+    linear-gradient(to right, currentColor 1px, transparent 1px);
+  background-size: 10px 10px;
+  font-size: 8rem;
+  font-weight: bold;
+  color: white;
+  background-color: #bdae70;
+  transform: translate(-40px, 0);
+}
+.contact-section .bg-zig-pattern .right-content {
+  padding: 2rem;
+}
+.contact-section .bg-zig-pattern h1 {
+  color: black;
+  font-weight: bold;
+  font-size: 6rem;
+  margin: 0;
+}
+.thank-section {
+  background-image: radial-gradient(currentColor 1px, transparent 1px);
+  background-size: calc(10 * 1px) calc(10 * 1px);
+  color: #e7393f;
+  margin: 0 40%;
+}
+.thank-section h3 {
+  text-align: center;
+  margin: 3rem 5rem;
+}
+.thank-section h3 a {
+  display: block;
+  background: #e7393f;
+  color: white;
+  padding: 1rem 5rem;
+  text-decoration: none;
+  font-size: small;
+  letter-spacing: 5px;
+  transition: all 0.5s;
+}
+.thank-section h3 a:hover {
+  letter-spacing: 10px;
+  background: #000;
+}
+@media screen and (max-width: 768px) {
+  .thank-section {
+    margin: 0;
+  }
+}
